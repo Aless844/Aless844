@@ -808,13 +808,54 @@ var json ={
 
 }
 
-function Load() {
+function load() {
     var body = document.body;
 
     body.innerHTML += '<ul>';
-    var list = document.querySelector(selectors: 'ul');
+    var list = document.querySelector('ul');
 
     for (let i=0; i < json.results.length; i++){
+        var movie = json.results[i];
+        list.innerHTML += `
+        <li class="movie-card">
+            <div class="position">${i + 1}</div>
+            <div class="mc-poster">
+                <a href="https://www.filmaffinity.com/es/film809297.html">
+                    <img width="100" height=""
+                         src="https://image.tmdb.org/t/p/w500/${movie.poster_path}"
+                         alt="${movie.title}">
+                </a>
+            </div>
+            <div class="movie-data">
+                <div class="mc-info-container">
+                    <div class="mc-title">
+                        <a href="https://www.filmaffinity.com/es/film809297.html" title="El padrino">
+                            ${movie.title}
+                        </a>
+                        ${movie.release_date}
+                        <img src="https://www.filmaffinity.com/imgs/countries/US.jpg" alt="Estados Unidos">
+                    </div>
+                    <div class="mc-director">
+                        <a href="" title="Francis Ford Coppola">Francis Ford Coppola</a>
+                    </div>
+                    <div class="mc-cast">
+                        <a href="">Marlon Brando</a>,
+                        <a href="">Al Pacino</a>,
+                        <a href="">James Caan</a>,
+                        <a href="">Robert Duvall</a>,
+                        <a href="">Diane Keaton</a>,
+                        <a href="">John Cazale</a>,
+                        <a href="">Talia Shire</a>,
+                        <a href="">Richard S. Castellano</a>,
+                        ...
+                    </div>
+                </div>
+                <div class="data">
+                    <div class="avg-rating">${movie.vote_average}</div>
+                    <div class="rat-count">${movie.vote_count}<i class="fas fa-user"></i></div>
+                </div>
+            </div>
+        </li>`;
 
     }
 }

@@ -1,4 +1,4 @@
-{
+var json ={
 
     "page": 1,
 
@@ -809,6 +809,12 @@
 }
 
 function Load() {
-    var body
+    var body = document.body;
 
+    body.innerHTML += '<ul>';
+    var list = document.querySelector(selectors: 'ul');
+
+    for (let i=0; i < json.results.length; i++){
+
+    }
 }

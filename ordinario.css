@@ -1,0 +1,101 @@
+body {
+    font: 13px/1.231 Arial, sans-serif;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.84);
+    margin: auto;
+}
+
+.fullname {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+.user-profile {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 700px;
+    height: 11em;
+    background: #fff;
+    border-radius: .3em;
+    display: flex;
+    flex-flow: row;
+    background-color: grey;
+    border: white 2px solid;
+}
+
+.description1{
+     margin: 10px;
+}
+
+.description2{
+    margin: 10px;
+    border-left: white 1px solid;
+}
+
+img#avatar {
+    padding: .7em;
+    margin-left: .3em;
+    margin-top: .3em;
+    height: 6.23em;
+    width: 6.23em;
+    border-radius: 18em;
+}
+
+img#avatar1 {
+    padding: .7em;
+    margin-left: .3em;
+    margin-top: .3em;
+    height: 6.23em;
+    width: 6.23em;
+    border-radius: 18em;
+}
+
+img#avatar2 {
+    padding: .7em;
+    margin-left: .3em;
+    margin-top: .3em;
+    height: 6.23em;
+    width: 6.23em;
+    border-radius: 18em;
+}
+
+
+.footer {
+    margin: 2em auto;
+    height: 3.70em;
+    background: #16a085;
+    text-align: center;
+    border-radius: 0 0 .3em .3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.1s;
+}
+
+button {
+    color: white;
+    font-family: "Coda", sans-serif;
+    text-align: center;
+    font-size: 20px;
+    background: none;
+    outline: none;
+    border: 0;
+}
+
+.footer:hover {
+    background: #1abc9c;
+}
+
+@media screen and (max-width: 600px) {
+    .description2{
+        margin: 10px;
+        border: none;
+    }
+    .user-profile{
+        flex-flow: column;
+        width: 400px;
+        height: 400px;
+    }
+}
+

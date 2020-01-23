@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Examen Ordinario</title>
+    <link rel="stylesheet" href="ordinario.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+          crossorigin="anonymous">
+</head>
+
+<script type="text/javascript">
+    function submit()
+    {
+        document.getElementById("btn").click();
+        document.submitForm.submit();
+    }
+</script>
+
+<body onload="submit()">
+<button id="btn"></button>
+    <div class="user-profile">
+        <img id="avatar"/>
+        <div class="description1">
+            <div id="fullname"></div>
+            <div> <i class="far fa-envelope"></i> <span id="email"></span></div>
+            <div> <i class="fab fa-twitter"></i> <span id="username"></span></div>
+            <div class="footer">
+                <button class="like">Like</button>
+            </div>
+        </div>
+
+        <div class="description2">
+            <div> <i class="fas fa-birthday-cake"></i> <span id="date"></span></div>
+            <div> <i class="fas fa-phone"></i> <span id="cell"></span></div>
+            <div> <i class="fas fa-map-marker-alt"></i> <span id="location">
+                <a id="street"></a>
+                <a id="city"></a>
+                <a id="postcountry"></a>
+            </span></div>
+        </div>
+    </div>
+
+    <div class="user-profile">
+        <img id="avatar1"/>
+        <div class="description1">
+            <div id="fullname1"></div>
+            <div> <i class="far fa-envelope"></i> <span id="email1"></span></div>
+            <div> <i class="fab fa-twitter"></i> <span id="username1"></span></div>
+            <div class="footer">
+                <button class="like">Like</button>
+            </div>
+        </div>
+
+        <div class="description2">
+            <div> <i class="fas fa-birthday-cake"></i> <span id="date1"></span></div>
+            <div> <i class="fas fa-phone"></i> <span id="cell1"></span></div>
+            <div> <i class="fas fa-map-marker-alt"></i> <span id="location1">
+                <a id="street1"></a>
+                <a id="city1"></a>
+                <a id="postcountry1"></a>
+            </span></div>
+        </div>
+    </div>
+
+<div class="user-profile">
+    <img id="avatar2"/>
+    <div class="description1">
+        <div id="fullname2"></div>
+        <div> <i class="far fa-envelope"></i> <span id="email2"></span></div>
+        <div> <i class="fab fa-twitter"></i> <span id="username2"></span></div>
+        <div class="footer">
+            <button class="like">Like</button>
+        </div>
+    </div>
+
+    <div class="description2">
+        <div> <i class="fas fa-birthday-cake"></i> <span id="date2"></span></div>
+        <div> <i class="fas fa-phone"></i> <span id="cell2"></span></div>
+        <div> <i class="fas fa-map-marker-alt"></i> <span id="location2">
+                <a id="street2"></a>
+                <a id="city2"></a>
+                <a id="postcountry2"></a>
+            </span></div>
+    </div>
+</div>
+<script src="ordinario.js"></script>
+</body>
+</html>
